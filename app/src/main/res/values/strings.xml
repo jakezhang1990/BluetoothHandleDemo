@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BluetoothHandle Demo</string>
+    <string-array name="bitRateList">
+        <item>10Mbps</item>
+        <item>20Mbps</item>
+        <item>30Mbps</item>
+        <item>40Mbps</item>
+        <item>50Mbps</item>
+        <item>60Mbps</item>
+        <item>80Mbps</item>
+    </string-array>
+
+    <string-array name="frameRateList">
+        <item>30fps</item>
+        <item>40fps</item>
+        <item>50fps</item>
+
+        <item>55fps</item>
+        <item>60fps</item>
+        <item>65fps</item>
+    </string-array>
+
+    <string-array name="resolutionList">
+        <item>480P(800x480)</item>
+        <item>720P(1280x720)</item>
+        <item>1080P(1920x1080)</item>
+        <item>2K(2560x1440)</item>
+        <item>4K(3840x2660)</item>
+    </string-array>
+
+    <string-array name="decodeModeList">
+        <item>Hard decode</item>
+        <item>Soft decode</item>
+    </string-array>
+
+    <string-array name="transportProtocolList">
+        <item>TCP</item>
+        <item>UDP</item>
+    </string-array>
+</resources>

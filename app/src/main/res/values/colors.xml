@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <!--10%透明度-->
+    <color name="whiteTranslate">#1effffff</color>
+    <!--20%不透明度-->
+    <color name="whiteTranslate20">#33FFFFFF</color>
+    <!--50%透明度-->
+    <color name="whiteTranslate50">#AFFFFFFF</color>
+
+
+</resources>

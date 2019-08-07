@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout1_bg">
+
+    <TextView
+        android:id="@+id/item1_setting1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Server setting"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+    android:textAllCaps="false"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout0"
+        android:layout_below="@id/item1_setting1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Server"
+            android:textColor="@color/whiteTranslate50"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Server IP"
+            android:textColor="@color/whiteTranslate50"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_below="@id/layout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/serverTV"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/circle_rectangle_bg"
+            android:text="Server"
+            android:textColor="@color/white"
+            android:layout_marginLeft="32dp"
+            android:editable="false"
+            android:textSize="13sp"
+            android:textAllCaps="false"/>
+
+        <ImageView
+            android:id="@+id/serverSpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginRight="12dp"
+            android:focusable="false"
+            android:src="@drawable/triangle_pic"/>
+
+        <EditText
+            android:id="@+id/editIP"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/circle_rectangle_bg"
+            android:hint="10.10.20.7"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="32dp"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/ipTV"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/circle_rectangle_bg"
+            android:text="Ip"
+            android:textColor="@color/white"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="32dp"
+            android:textSize="13sp"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/layout"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/whiteTranslate"/>
+
+</RelativeLayout>

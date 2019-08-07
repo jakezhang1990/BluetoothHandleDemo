@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false">
+        <inset android:drawable="@drawable/circle_rectangle_default"/>
+    </item>
+    <item android:state_focused="true">
+        <inset android:drawable="@drawable/circle_rectangle_enable"/>
+    </item>
+
+</selector>
