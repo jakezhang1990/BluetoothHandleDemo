@@ -32,3 +32,12 @@ Android手机蓝牙连接手柄，摇杆和十字按键控制手机焦点，并�
     https://developer.android.google.cn/reference/android/view/MotionEvent.html#AXIS_LTRIGGER
     亚马逊的一篇文章：
     https://developer.amazon.com/zh/docs/fire-tv/getting-started-developing-apps-and-games.html
+    
+    
+    
+## 解决手柄焦点控制在android9.0上乱跑的bug。
+1.左右按钮.setEnable();替换为左右按钮.setSelected(false);
+
+2.将drawable中xml中控制不同图片展示的state_enable替换为state_selected。
+
+因为在android9.0上，state_enable如果设置了false，该控件会直接失去焦点，如果当前控件从state_enable的true变为false，焦点会直接跑掉，下一次该state_enable为false的控件也不会获取到手柄焦点。
