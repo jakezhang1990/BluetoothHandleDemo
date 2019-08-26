@@ -644,8 +644,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        SettingCheckBean bean=bitRats.get(defaultCheckId);
         SettingCheckBean bean=(SettingCheckBean)list.get(defaultCheckId);
         contentTxtview.setText(bean.getContent());
-        leftImgView.setEnabled(bean.isLeftClickable());
-        rightImgView.setEnabled(bean.isRightClickable());
+//         leftImgView.setEnabled(bean.isLeftClickable());
+//         rightImgView.setEnabled(bean.isRightClickable());
+        leftImgView.setSelected(bean.isLeftClickable());
+        rightImgView.setSelected(bean.isRightClickable());
     }
 
 
