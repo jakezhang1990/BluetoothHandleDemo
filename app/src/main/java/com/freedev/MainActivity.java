@@ -247,7 +247,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.BIT_RAT_SETTING_ID,left);
         }else {
             tempBitRat=0;
-            item2_leftBtn.setEnabled(false);
+//             item2_leftBtn.setEnabled(false);
+            item2_leftBtn.setSelected(false);
 //                Toast.makeText(this, "left left", Toast.LENGTH_SHORT).show();
         }
     }
@@ -265,7 +266,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.BIT_RAT_SETTING_ID,right);
         }else {
             tempBitRat=bitRats.size()-1;
-            item2_rightBtn.setEnabled(false);
+//             item2_rightBtn.setEnabled(false);
+            item2_rightBtn.setSelected(false);
 //                Toast.makeText(this, "right right", Toast.LENGTH_SHORT).show();
         }
     }
@@ -283,7 +285,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.FRAME_RATE_SETTING_ID,left);
         }else {
             tempFrameRat=0;
-            item3_leftBtn.setEnabled(false);
+//             item3_leftBtn.setEnabled(false);
+            item3_leftBtn.setSelected(false);
 //                Toast.makeText(this, "left left", Toast.LENGTH_SHORT).show();
         }
     }
@@ -301,7 +304,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.FRAME_RATE_SETTING_ID,right);
         }else {
             tempFrameRat=frameRats.size()-1;
-            item3_rightBtn.setEnabled(false);
+//             item3_rightBtn.setEnabled(false);
+            item3_rightBtn.setSelected(false);
 //                Toast.makeText(this, "right right", Toast.LENGTH_SHORT).show();
         }
     }
@@ -319,7 +323,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.RESOLUTION_SETTING_ID,left);
         }else {
             tempResolution=0;
-            item4_leftBtn.setEnabled(false);
+//             item4_leftBtn.setEnabled(false);
+            item4_leftBtn.setSelected(false);
 //                Toast.makeText(this, "left left", Toast.LENGTH_SHORT).show();
         }
     }
@@ -337,7 +342,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.RESOLUTION_SETTING_ID,right);
         }else {
             tempResolution=resolutionRats.size()-1;
-            item4_rightBtn.setEnabled(false);
+//             item4_rightBtn.setEnabled(false);
+            item4_rightBtn.setSelected(false);
 //                Toast.makeText(this, "right right", Toast.LENGTH_SHORT).show();
         }
     }
@@ -355,7 +361,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.DECODEING_MODE_ID,left);
         }else {
             tempDecoding=0;
-            item5_leftBtn.setEnabled(false);
+//             item5_leftBtn.setEnabled(false);
+            item5_leftBtn.setSelected(false);
 //                Toast.makeText(this, "left left", Toast.LENGTH_SHORT).show();
         }
     }
@@ -373,7 +380,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.DECODEING_MODE_ID,right);
         }else {
             tempDecoding=decodeModes.size()-1;
-            item5_rightBtn.setEnabled(false);
+//             item5_rightBtn.setEnabled(false);
+            item5_rightBtn.setSelected(false);
 //                Toast.makeText(this, "right right", Toast.LENGTH_SHORT).show();
         }
     }
@@ -391,7 +399,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.TRANSPORT_PROTOCOL_ID,left);
         }else {
             tempTransport=0;
-            item6_leftBtn.setEnabled(false);
+//             item6_leftBtn.setEnabled(false);
+            item6_leftBtn.setSelected(false);
 //                Toast.makeText(this, "left left", Toast.LENGTH_SHORT).show();
         }
     }
@@ -409,7 +418,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putInt(Common.TRANSPORT_PROTOCOL_ID,right);
         }else {
             tempTransport=transportProtols.size()-1;
-            item6_rightBtn.setEnabled(false);
+//             item6_rightBtn.setEnabled(false);
+            item6_rightBtn.setSelected(false);
 //                Toast.makeText(this, "right right", Toast.LENGTH_SHORT).show();
         }
     }
