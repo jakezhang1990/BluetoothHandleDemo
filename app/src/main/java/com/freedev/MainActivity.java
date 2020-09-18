@@ -67,6 +67,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int BIT_RAT_SETTING_ID,FRAME_RATE_SETTING_ID,RESOLUTION_SETTING_ID,DECODEING_MODE_ID,
             TRANSPORT_PROTOCOL_ID;
 
+
+    private InputThread inputThread = new InputThread();// 模拟输入线程
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -161,6 +164,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //摇杆
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        // TODO: 2020/9/18   这里 只是为了方便模拟 输入事件，仅仅用于测试！！！
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            inputThread.start();
+            return true;
+        }
         //item2
         if (keyCode==KeyEvent.KEYCODE_DPAD_LEFT&&item2_leftBtn.hasFocus()){
             //码率左摇杆
