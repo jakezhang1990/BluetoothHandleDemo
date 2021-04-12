@@ -4,6 +4,9 @@ Android手机蓝牙连接手柄，摇杆和十字按键控制手机焦点，并�
 预览效果图片：
 ![](https://github.com/jakezhang1990/BluetoothHandleDemo/blob/master/screenshot.png)
 
+![image](https://user-images.githubusercontent.com/24599149/114330550-8aac6e80-9b74-11eb-8dda-7df00918ed01.png)
+
+
 
 解决的关键点在Activity的onKeyDown这个方法。得到相应的 keyCode,便可以监听。true表示消费该事件，消费之后就不会再继续向下传递了，false和返回父类的onKeyDown方法都表示不消费继续传递。
 
